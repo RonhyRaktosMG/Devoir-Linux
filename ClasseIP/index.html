@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Document</title>
+    <link rel='stylesheet' href='assets/css/style.css'>
+</head>
+<body>
+    <div class='container'>
+        <div class='titre'>
+            Ip-Class
+        </div>
+        <form action='main.cgi' method='get'>
+            <input type='text' name='ip_entry' id='ip_entry' placeholder='Addresse Ip (ex: 192.168.43.1)'>
+            <button type='submit' id='ip_valide'> Quelle classe ? </button>
+        </form>
+    </div>
+    <div class='container' id='result' style='display: none;'>
+        <p>192.168.43.1</p>
+        <p>classe</p>
+        <h1>A</h1>
+    </div>
+
+
+    <script src='assets/js/jquery-3.4.1.js'></script>
+    <script src='assets/js/script.js'></script>
+</body>
+</html>
