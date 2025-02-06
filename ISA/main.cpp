@@ -54,10 +54,13 @@ int main () {
     Complexe c1 = Complexe(f1, f2);
     Complexe c2 = Complexe(f3, f4);
 
-    Arithm a;
-/*     cout << "addition de " << c1 << " + " << c2 << " = " << a.addition_complexe(c1, c2) << " \n";
+    /*     
+    cout << "addition de " << c1 << " + " << c2 << " = " << c1 + c2 << " \n";
     cout << "soustraction de " << c1 << " - " << c2 << " = " <<  c1 - c2 << " \n";
- */
+    */
+
+    Arithm a;
+
     cout << a.addition(1.5, Complexe(Fraction(2, 1), f4)) << endl;
 
 
