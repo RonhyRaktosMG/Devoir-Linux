@@ -53,6 +53,11 @@ namespace Isa
     Fraction Complexe::getImg () {
         return img;
     }
+
+    void Complexe::simplify () {
+        reel.simplify();
+        img.simplify();
+    }
     
     Complexe Complexe::addition (Complexe b){
         return Complexe(

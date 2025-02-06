@@ -13,6 +13,8 @@ namespace Isa
         Fraction getReel();
         Fraction getImg();
 
+        void simplify ();
+
         Complexe addition(Complexe b);
         Complexe soustract(Complexe b);
 

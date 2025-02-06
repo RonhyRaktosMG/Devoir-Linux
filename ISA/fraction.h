@@ -20,6 +20,8 @@ namespace Isa
         Fraction multiply (Fraction b);
         Fraction divide (Fraction b);
 
+        void simplify();
+
     private:
         int num, den;
     };

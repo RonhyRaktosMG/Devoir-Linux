@@ -52,6 +52,24 @@ namespace Isa
         return den;
     }
 
+    void Fraction::simplify () {
+        int a = num;
+        int b = den;
+        int r;
+        while (b != 0) {
+            r = a % b;
+            a = b;
+            b = r;
+        }
+        num = num / a;
+        den = den / a;
+
+        if (den < 0) {
+            num = -num;
+            den = -den;
+        }
+    }
+
     Fraction Fraction::addition (Fraction b) {
          Fraction a = Fraction(getNum(), getDen());
          Fraction res(0, 1);
