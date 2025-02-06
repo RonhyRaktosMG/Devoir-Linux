@@ -61,7 +61,7 @@ int main () {
 
     Arithm a;
 
-    cout << a.addition(1.5, Complexe(Fraction(2, 1), f4)) << endl;
+    cout << a.addition(1.5, c2) << endl;
 
 
     return 0;
